@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Responsive layout with advanced sidebar menu built with SCSS and vanilla Javascript"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <title>BEAN PAD</title>
+  </head>
+  <body>
+    <div class="header">
+      <header class="header" style="background-color: rgb(37, 37, 37);">
+        <a id="btn-collapse" href="#" style="padding-left:25px;   -moz-osx-font-smoothing: grayscale;" >
+          <i class="ri-bar-chart-horizontal-line ri-lg"></i></i>
+        </a>
+        <style type="text/css">
+          #btn-toggle { 
+          display:none; 
+          }
+          @media screen and (max-width: 500px) {
+          #btn-toggle { 
+          display:block; }
+          }
+          </style>
+          
+        <a id="btn-toggle" href="#" class="sidebar-toggler  break-point-lg">
+          <i class="ri-menu-line ri-xl"></i>
+        </a>
+      
+          
+            <img  src="assets/images/logo.png" style="height: 40px; padding-right: 60px;padding-left:50px; " alt="logo">
+            <button style="float:right;">CONNECT</button>
+          
+       
+      </header>
+    </div>
+    <div class="layout has-sidebar fixed-sidebar fixed-header">
+      <aside id="sidebar" class="sidebar break-point-lg has-bg-image">
+        <div class="image-wrapper">
+        
+        </div>
+        <div class="sidebar-layout">
+         
+          <div class="sidebar-content">
+            <nav class="menu open-current-submenu">
+              <ul>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-home-3-fill"></i>
+                    </span>
+                    <span class="menu-title">Home</span>
+                  </a>
+                </li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-coin-fill"></i>
+                    </span>
+                    <span class="menu-title">Launch Pads</span>
+                   
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="#">
+                          <span class="menu-title">Create Launch Pad</span>
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">
+                          <span class="menu-title">Create Fair Launch</span>
+                        </a>
+                      </li>
+                      <li class="menu-item ">
+                        <a href="#">
+                          <span class="menu-title">Create Token</span>
+                        </a>
+                      </li>
+                      <li class="menu-item sub-menu">
+                        <a href="#">
+                          <span class="menu-title">Launch Pad List</span>
+                        </a>
+                        <div class="sub-menu-list">
+                          <ul>
+                            <li class="menu-item">
+                              <a href="#">
+                                <span class="menu-title">View Pool</span>
+                              </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </li>
+                       
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-bar-chart-grouped-fill"></i>
+                    </span>
+                    <span class="menu-title">Leaderboard</span>
+                  </a>
+                </li>
+                <li class="menu-item sub-menu">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-lock-2-fill"></i>
+                    </span>
+                    <span class="menu-title">BeanLock</span>
+                  </a>
+                  <div class="sub-menu-list">
+                    <ul>
+                      <li class="menu-item">
+                        <a href="#">
+                          <span class="menu-title">Create Lock</span>
+                        </a>
+                      </li>
+                      <li class="menu-item sub-menu">
+                        <a href="#">
+                          <span class="menu-title ">Token</span>
+                        </a>
+                        <div class="sub-menu-list">
+                          <ul>
+                            <li class="menu-item">
+                              <a href="#">
+                                <span class="menu-title">Lock info</span>
+                              </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="menu-item sub-menu">
+                        <a href="#">
+                          <span class="menu-title ">Liquidity</span>
+                        </a>
+                        <div class="sub-menu-list">
+                          <ul>
+                            <li class="menu-item">
+                              <a href="#">
+                                <span class="menu-title">Liquidity lock info</span>
+                              </a>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+               
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-robot-fill"></i>
+                    </span>
+                    <span class="menu-title">Bean Anti Bot</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-alarm-warning-fill"></i>
+                    </span>
+                    <span class="menu-title">Pools Alert</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-check-double-fill"></i>
+                    </span>
+                    <span class="menu-title">KYC & Audits</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-article-fill"></i>
+                    </span>
+                    <span class="menu-title">Docs</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-telegram-fill"></i>
+                    </span>
+                    <span class="menu-title">Telegram</span>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">
+                    <span class="menu-icon">
+                      <i class="ri-twitter-fill"></i>
+                    </span>
+                    <span class="menu-title">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sidebar-footer"><span></span></div>
+        </div>
+      </aside>
+      <div id="overlay" class="overlay"></div>
+      <div class="layout" style="background-color: rgb(37, 37, 37);">
+        
+        <main class="content">
+        
+        </main>
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
